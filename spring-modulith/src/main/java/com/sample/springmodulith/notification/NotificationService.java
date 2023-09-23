@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class NotificationService {
 
-    public void createNotification(Notification notification) {
+    public void createNotification(NotificationDTO notification) {
 
         log.info("Received notification by module dependency for product : {} in date : {} by : {}.",
-                notification.getProductName(),
-                notification.getDate(),
-                notification.getFormat());
+                notification.productName(),
+                notification.date(),
+                notification.format());
     }
 }

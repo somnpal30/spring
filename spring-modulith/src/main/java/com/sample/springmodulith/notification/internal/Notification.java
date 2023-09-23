@@ -1,4 +1,4 @@
-package com.sample.springmodulith.notification;
+package com.sample.springmodulith.notification.internal;
 
 import lombok.*;
 

@@ -1,6 +1,6 @@
 package com.sample.springmodulith;
 
-import com.sample.springmodulith.product.Product;
+import com.sample.springmodulith.product.internal.Product;
 import com.sample.springmodulith.product.ProductService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

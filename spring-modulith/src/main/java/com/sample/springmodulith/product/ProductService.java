@@ -1,8 +1,8 @@
 package com.sample.springmodulith.product;
 
-import com.sample.springmodulith.notification.Notification;
+import com.sample.springmodulith.notification.NotificationDTO;
 import com.sample.springmodulith.notification.NotificationService;
-import com.sample.springmodulith.notification.NotificationType;
+import com.sample.springmodulith.product.internal.Product;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +15,6 @@ public class ProductService {
     NotificationService notificationService;
 
     public void create(Product product) {
-        notificationService.createNotification(new Notification(new Date(), NotificationType.SMS, product.getName()));
+        notificationService.createNotification(new NotificationDTO( product.getName(), "SMS",new Date()));
     }
 }

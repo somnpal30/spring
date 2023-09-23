@@ -21,6 +21,12 @@ class SpringModulithApplicationTests {
         modules.forEach(System.out::println);
     }
 
+    @Test
+    void verifyModularStructure() {
+        ApplicationModules modules = ApplicationModules.of(SpringModulithApplication.class);
+        modules.verify();
+    }
+
 
     @Test
     void verifyRegularExpression() {

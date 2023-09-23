@@ -1,4 +1,4 @@
-package com.sample.springmodulith.product;
+package com.sample.springmodulith.product.internal;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
